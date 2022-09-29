@@ -28,3 +28,69 @@ p{
 h2,h3,h4,h5,h6{
     font-family:DINNextW1G ,sans-serif ;
 }
+
+/* Header styles */
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+header>.col{
+    height: 78px;
+    float: left;
+
+}
+
+header>.col:first-child{
+    width: 169px;
+    background-color: red;
+}
+header>.col:nth-child(2){
+    width: calc(100% - 188px - 169px);
+    background-color: blue;
+}
+header>.col:last-child{
+    width: 188px;
+    background-color: #111111;
+    text-align: right;
+    padding-right: 32px;
+    padding-top: 20px;
+
+}
+header>.col:last-child>div{
+    display: inline-block;
+}
+#btn-playnow{
+    padding: 8px 16px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%);
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background;
+    transition-delay: 50ms;
+}
+#ico-world{
+    width: 32px;
+    height:32px;
+    margin-right: 6px;
+    text-align: center;
+    border-radius: 6.4px;
+    background-color: black;
+    cursor: pointer;
+
+}
+#btn-playnow:hover{
+    background: rgb(255, 70, 80);
+}
+#ico-world:hover{
+    background-color:rgba(128,128,128,0.2) ;
+}
+#ico-world> ion-icon{
+    color: white;
+    font-size: 1.2rem;
+    padding-top: 5px;
+    vertical-align: middle;
+    
+}
